@@ -1,0 +1,13 @@
+
+.video-info__categories {
+    justify-content: flex-start;
+}
+.video-info__categories span {
+    margin: 0 10px;
+}
+.main-content-suggestions {
+    grid-template: auto / 1fr 1fr;
+}
+.main-content-suggestions__title {
+    grid-column: 1 / -1;
+}

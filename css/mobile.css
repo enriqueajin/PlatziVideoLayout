@@ -20,13 +20,14 @@ body {
     width: 100vw;
     min-width: 320px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 100vw;
+    padding-left: 20px;
     background-color: var(--blue);
 }
 .main-header figure {
-    width: 70vw;
+    width: 225px;
 }
 .main-header figure img {
     width: 100%;
@@ -37,7 +38,7 @@ body {
 }
 .main-nav {
     display: none;
-    width: 100vw;
+    width: 100%;
     min-width: 320px;
     padding-top: 20px;
     overflow: hidden;
@@ -102,6 +103,9 @@ body {
 .main-content {
     width: 100%;
 }
+.main-content__video video {
+    outline: none;
+}
 .video-info {
     width: 100%;
     display: grid;
@@ -154,7 +158,8 @@ body {
 }
 .video-info__categories span {
     display: flex;
-    width: 70px;
+    width: 23%;
+    max-width: 100px;
     height: 25px;
     justify-content: center;
     align-items: center;

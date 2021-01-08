@@ -1,0 +1,27 @@
+body {
+    grid-template: 80px 1fr / 270px 1fr;
+    grid-template-areas: "logo contenido"
+                         "nav contenido";
+}
+.main-header {
+    grid-area: logo;
+}
+.fa-bars {
+    display: none;
+}
+.main-nav {
+    min-width: 270px;
+    grid-area: nav;
+}
+.nav {
+    grid-template: auto / 1fr;
+}
+.main-content {
+    grid-area: contenido;
+}
+.main-nav {
+    display: block;
+}
+.main-content-suggestions {
+    grid-template: auto / 1fr 1fr 1fr;
+}
