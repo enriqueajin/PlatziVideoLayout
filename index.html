@@ -12,10 +12,10 @@
 </head>
 <body class="grid-container">
     <header class="main-header">
+        <span><i class="fas fa-bars" onclick="showNav()"></i></span>
         <figure>
             <img src="./images/platzi-video-logo.png" alt="Logo de Platzi Video">
         </figure>
-        <span><i class="fas fa-bars" onclick="showNav()"></i></span>
     </header>
     <nav class="main-nav" id="menu">
         <section class="nav">
@@ -65,7 +65,9 @@
     </nav>
     <main class="main-content">
         <section class="main-content__video">
-            <video src=""></video>
+            <video controls width="100%" preload="none">
+                <source src="./images/uno-de-los-dos.mp4" type="video/mp4">
+            </video>
         </section>
         <section class="video-info">
             <div class="video-info__description">
