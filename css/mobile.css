@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --blue: #151B31;
+}
 html {
     font-size: 62.5%;
 }
@@ -10,4 +13,89 @@ body {
     display: grid;
     grid-template: auto / 1fr;
     font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+.main-header {
+    width: 100vw;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--blue);
+}
+.main-header figure {
+    width: 70vw;
+}
+.main-header figure img {
+    width: 100%;
+}
+.fa-bars {
+    color: white;
+    font-size: 20px;
+}
+.main-nav {
+    display: none;
+    position: relative;
+    width: 100vw;
+    min-width: 320px;
+    padding-top: 20px;
+    overflow: hidden;
+    background-color: var(--blue);
+    box-shadow: inset 0px 30px 9px -25px rgba(0,0,0,0.75);
+}
+.nav {
+    display: grid;
+    grid-template: auto / minmax(50%, 50%) minmax(50%, 50%);
+    grid-gap: 10px;
+    padding: 0 10px;
+    font-weight: 300;
+    color: white
+}
+.my-playlist-nav {
+    width: 100%;
+}
+.my-playlist-nav__title {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.my-playlist-nav__list {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    line-height: 3rem;
+}
+::marker {
+    color: #FF517C;
+}
+.friends-playlist-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5px;
+}
+.friends-playlist-nav__title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.friend {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+.friend__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background-color: lightcoral;
+}
+.fa-user {
+    font-size: 2.5rem;
 }

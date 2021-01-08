@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/script.js" language="javascript" type="text/javascript"></script>
     <title>Platzi Video</title>
 </head>
 <body class="grid-container">
@@ -11,8 +15,9 @@
         <figure>
             <img src="./images/platzi-video-logo.png" alt="Logo de Platzi Video">
         </figure>
+        <span><i class="fas fa-bars" onclick="showNav()"></i></span>
     </header>
-    <nav class="main-nav">
+    <nav class="main-nav" id="menu">
         <section class="nav">
             <div class="my-playlist-nav">
                 <p class="my-playlist-nav__title">Mi Playlist</p>
@@ -26,7 +31,7 @@
                     <li>Quién Lo Diría</li>
                     <li>Lo Mejor de Mí</li>
                     <li>El Hombre De Tu Vida</li>
-                    <li>Perdóname</li>
+                    <li>Perdóname</li>                    
                 </ol>
             </div>
             <div class="friends-playlist-nav">
