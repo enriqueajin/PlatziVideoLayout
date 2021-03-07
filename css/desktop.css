@@ -1,26 +1,31 @@
-body {
+.grid-container {
     grid-template: 80px 1fr / 270px 1fr;
     grid-template-areas: "logo contenido"
                          "nav contenido";
 }
 .main-header {
+    display: block;
+    min-width: 0;
     grid-area: logo;
+    grid-column: 1 / 2;
 }
 .fa-bars {
     display: none;
 }
 .main-nav {
+    position: static;
+    display: block;
+    margin-top: 0;
     min-width: 270px;
     grid-area: nav;
+    grid-column: span 1 / span 1;
 }
 .nav {
     grid-template: auto / 1fr;
 }
 .main-content {
+    z-index: 1;
     grid-area: contenido;
-}
-.main-nav {
-    display: block;
 }
 .main-content-suggestions {
     grid-template: auto / 1fr 1fr 1fr;

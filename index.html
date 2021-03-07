@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 500px)">
     <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 900px)">
-    <script src="./js/script.js" language="javascript" type="text/javascript"></script>
     <title>Platzi Video</title>
 </head>
-<body class="grid-container">
-    <header class="main-header">
+<body class="grid-container" id="body">
+    <header class="main-header" id="header">
         <span><i class="fas fa-bars" onclick="showNav()"></i></span>
         <figure>
             <img src="./images/platzi-video-logo.png" alt="Logo de Platzi Video">
@@ -65,7 +64,7 @@
             </div>
         </section>
     </nav>
-    <main class="main-content">
+    <main class="main-content" id="main">
         <section class="main-content__video">
             <video controls width="100%" preload="none">
                 <source src="./images/uno-de-los-dos.mp4" type="video/mp4">
@@ -178,5 +177,6 @@
             </section>
         </section>
     </main>
+    <script src="./js/script.js" language="javascript" type="text/javascript"></script>
 </body>
 </html>
